@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--Meta de base pour le site-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magics Mushroom Shop - Panier</title>
+    <meta name="description" content="Magic Mushrooms, valider votre panier en complétant le formulaire, livraison assurée sous 24h et 48h" />
+    <meta name="keywords" content="Panier du Shop, Panier du Shop de champignons, Magic Mushroom Panier, Panier Vente en ligne de champignons hallucinogène et médicale" />
+
+    <!--Polices du site-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vampiro+One&display=swap" rel="stylesheet">
+
+    <!--Lien CSS Bootstrp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--En-tête du site-->
+    <header>
+        <!--HTML Image de fond-->
+        <div class="container-sm container-md container-lg container-xl" itemscope itemtype="https://schema.org/Organization">
+            <div class="text-white">
+
+                <!--HTML Logo + Titre + Devise-->
+                <div class="card-overlay">
+
+                    <!--Logo-->
+                    <div class="row no-gutters">
+                        <div class="col-md-4 col-sm-2">
+                            <img itemprop="logo" src="data/logo_champi.svg" class="card-img" alt="Entete">
+                        </div>
+
+                        <!--Titre + Devise-->
+                        <div class="col-md-8 col-sm-4">
+                            <div class="card-body">
+                                <p class="p-card-title"><span itemprop="name">Magic Mushrooms Shop</span></p>
+                                <p class="p-card-text"><span itemprop="description">" Boost your brain, your body and take care your self with our shop "</span></p>
+                            </div>
+                        </div>
+                        <!--Menu de navigation-->
+                        <ul class="nav nav-pills nav-fill w-100 justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active btn btn-color" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-color" data-toggle="dropdown" href="catalogue.html" role="button" aria-haspopup="true" aria-expanded="false">Produits</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="catalogue.html">Tous nos produits</a>
+                                    <a class="dropdown-item" href="produit.html">Santé</a>
+                                    <a class="dropdown-item" href="produit.html">Sport</a>
+                                    <a class="dropdown-item" href="produit.html">Détente</a>
+                                    <a class="dropdown-item" href="produit.html">Décolage</a>
+                                    <a class="dropdown-item" href="produit.html">Concentration</a>
+                                </div>
+                            </li>
+                            <!--Bouton déroulant-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-color" data-toggle="dropdown" href="team.html" role="button" aria-haspopup="true" aria-expanded="false">Team</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="team.html">Toute l'équipe</a>
+                                    <a class="dropdown-item" href="cv_cedric.html">Cédric Pagès</a>
+                                    <a class="dropdown-item" href="cv_martin.html">Martin Petiot</a>
+                                    <a class="dropdown-item" href="cv_naim.html">Naîm Ebrahim</a>
+                                    <a class="dropdown-item" href="cv_nicolas.html">Nicolas Bartos</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-color" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-color" href="panier.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    height="22px" weight="22px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g>
+                                       <path fill="currentColor" d="M488.468,188.384H373.643L292.925,32.747c-2.894-5.58-7.787-9.699-13.779-11.599c-5.993-1.9-12.365-1.352-17.945,1.542
+                                           c-1.94,1.006-3.676,2.25-5.201,3.673c-1.526-1.422-3.262-2.667-5.202-3.673c-5.579-2.894-11.953-3.441-17.945-1.542
+                                           c-5.992,1.899-10.885,6.019-13.779,11.599l-85.082,164.052c-2.894,5.58-3.442,11.953-1.542,17.945
+                                           c0.648,2.045,1.574,3.951,2.71,5.704H23.532c-4.705,0-8.532-3.827-8.532-8.532c0-4.704,3.828-8.532,8.532-8.532h85.505
+                                           c4.142,0,7.5-3.357,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5H23.532C10.557,188.384,0,198.941,0,211.916
+                                           c0,10.761,7.262,19.851,17.141,22.643l43.439,231.67c2.795,14.912,15.836,25.735,31.008,25.735h328.825
+                                           c15.172,0,28.212-10.823,31.008-25.735l43.439-231.671c9.878-2.791,17.14-11.881,17.14-22.642
+                                           C512,198.94,501.443,188.384,488.468,188.384z M268.107,36.007c2.023-1.049,4.334-1.248,6.506-0.559
+                                           c2.172,0.688,3.947,2.182,4.996,4.205l85.082,164.053c1.049,2.023,1.248,4.334,0.559,6.506c-0.688,2.173-2.182,3.947-4.206,4.996
+                                           c-2.022,1.05-4.333,1.248-6.506,0.56c-2.173-0.688-3.947-2.182-4.996-4.205L264.461,47.509
+                                           C262.295,43.333,263.931,38.173,268.107,36.007z M367.979,235.449l-7.097,73.178H263.5v-73.178H367.979z M256,63.775
+                                           l80.228,154.692c0.354,0.684,0.74,1.344,1.153,1.981H174.619c0.413-0.637,0.799-1.297,1.153-1.98l7.823-15.083H297.75
+                                           c4.142,0,7.5-3.357,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5H191.374L256,63.775z M147.308,203.705l85.083-164.053
+                                           c1.049-2.023,2.823-3.517,4.996-4.205c0.85-0.27,1.721-0.403,2.588-0.403c1.349,0,2.687,0.324,3.918,0.962
+                                           c4.176,2.167,5.812,7.326,3.646,11.502l-85.083,164.053c-1.049,2.023-2.823,3.517-4.996,4.205c-2.171,0.688-4.482,0.49-6.506-0.56
+                                           c-2.023-1.049-3.517-2.823-4.205-4.996C146.06,208.039,146.259,205.729,147.308,203.705z M32.569,235.449h96.382l7.097,73.178
+                                           H46.29L32.569,235.449z M49.103,323.626h88.4l7.097,73.177H62.823L49.103,323.626z M91.587,476.965
+                                           c-7.958,0-14.798-5.677-16.264-13.499l-9.687-51.663h80.418l6.32,65.162H91.587z M248.5,476.965h-81.057l-6.319-65.162H248.5
+                                           V476.965z M248.5,396.803h-88.831l-7.097-73.177H248.5V396.803z M248.5,308.627h-97.382l-7.097-73.178H248.5V308.627z
+                                            M344.557,476.965H263.5v-65.162h87.376L344.557,476.965z M352.331,396.804H263.5v-73.177h95.928L352.331,396.804z
+                                            M436.677,463.466c-1.466,7.822-8.307,13.499-16.265,13.499h-60.786l6.32-65.162h80.418L436.677,463.466z M449.177,396.804
+                                           h-81.776l7.097-73.177h88.4L449.177,396.804z M465.71,308.626h-89.757l7.097-73.178h96.381L465.71,308.626z M488.468,220.449
+                                           h-0.122c-0.005,0-0.009,0-0.014,0H376.84c1.136-1.753,2.061-3.659,2.71-5.704c1.183-3.733,1.416-7.615,0.724-11.36h108.194
+                                           c4.705,0,8.532,3.828,8.532,8.532C497,216.621,493.172,220.449,488.468,220.449z"/></g></g></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Corps de contenu du site-->
+
+    <section id="home" class="bg-panier">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="title">
+                <div class="container">
+                    <h1 class="display-4">Votre panier Magic Mushrooms</h1>
+                    <p class="lead">Pour une livraison sous 24-48h, finaliser vite votre panier d'achats en complétant le formulaire ci-dessous.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container"><br><br>
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Votre panier</span>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Kit de Pousse</h6>
+                                <small class="text-muted">Votre box pour faire pousser vos champignons préférés !</small>
+                            </div>
+                            <span class="text-muted">55 € - 100 gr</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">The Only One</h6>
+                                <small class="text-muted">Pour vos détentes</small>
+                            </div>
+                            <span class="text-muted">110 € - 200 gr</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Brazilian's Sunshine</h6>
+                                <small class="text-muted">Le soleil dans votre tête</small>
+                            </div>
+                            <span class="text-muted">20 € - 100 gr</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Code Promo</h6>
+                                <small>CHAMPI>100</small>
+                            </div>
+                            <span class="text-success">-10 €</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (EURO)</span>
+                            <strong>175 €</strong>
+                        </li>
+                    </ul>
+
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-color">Valider</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Adresse de facturation</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Prénom</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Champs obligaoire
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Nom</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Champs obligaoire
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username">Nom d'utilisateur</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Champs obligaoire
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optionnel)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Veuillez entrer une adresse électronique valide pour l'envoi des mises à jour.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address">Adresse</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                Veuillez indiquer votre adresse de livraison.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address2">Adresse 2 <span class="text-muted">(Optionnel)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="country">Pays</label>
+                                <select class="custom-select d-block w-100" id="country" required>
+                                    <option value="">Choix...</option>
+                                    <option>France</option>
+                                    <option>Espagne</option>
+                                    <option>Italie</option>
+                                    <option>Allemagne</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Veuillez sélectionner un pays valide.
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="state">Région</label>
+                                <select class="custom-select d-block w-100" id="state" required>
+                                    <option value="">Choix...</option>
+                                    <option>Auvergne Rhône-Aples</option>
+                                    <option>Ile-de-France</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Optionnel
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="postalCode">Code postal</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Code postal requis.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address">
+                            <label class="custom-control-label" for="same-address">L'adresse de livraison est la même que mon adresse de facturation</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Conservez ces informations pour la prochaine fois</label>
+                        </div>
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Paiement</h4>
+
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="credit">Carte de crédit</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="debit">PayPal</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="paypal">PayLib</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Nom de la carte</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Nom complet tel qu'il figure sur la carte</small>
+                                <div class="invalid-feedback">
+                                    Nom requis.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Numéro de carte</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Numéro de carte requis.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Date d'expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Date d'expiration requise.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Code de sécurité requis.
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-color btn-lg btn-block" type="submit">Valider votre panier</button>
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!--Pied de page du site-->
+    <footer>
+        <div class="container">
+            <div class="row text-white justify-content-between align-items-start">
+                <div class="col-1 col-sm-2">
+
+                    <!--Espace logo-->
+                    <div class="follow-us">
+                        <h3>Suivez-nous</h3>
+                        <div class="logo_reseau">
+                            <svg id="linkedin" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M36.3817 0H3.61832C1.62 0 0 1.62 0 3.61832V36.3816C0 38.38 1.62 40 3.61832 40H36.3816C38.38 40 40 38.38 40 36.3816V3.61832C40 1.62 38.38 0 36.3817 0ZM12.3777 34.5386C12.3777 35.1202 11.9063 35.5916 11.3247 35.5916H6.84241C6.26084 35.5916 5.78942 35.1202 5.78942 34.5386V15.749C5.78942 15.1674 6.26084 14.696 6.84241 14.696H11.3247C11.9063 14.696 12.3777 15.1674 12.3777 15.749V34.5386ZM9.08356 12.9248C6.73183 12.9248 4.82534 11.0183 4.82534 8.6666C4.82534 6.31487 6.73183 4.40838 9.08356 4.40838C11.4353 4.40838 13.3418 6.31487 13.3418 8.6666C13.3418 11.0183 11.4354 12.9248 9.08356 12.9248ZM35.8021 34.6235C35.8021 35.1581 35.3686 35.5916 34.8339 35.5916H30.0241C29.4894 35.5916 29.0559 35.1581 29.0559 34.6235V25.8101C29.0559 24.4953 29.4416 20.0487 25.62 20.0487C22.6557 20.0487 22.0544 23.0923 21.9337 24.4581V34.6235C21.9337 35.1581 21.5003 35.5916 20.9655 35.5916H16.3136C15.779 35.5916 15.3454 35.1581 15.3454 34.6235V15.6642C15.3454 15.1295 15.779 14.696 16.3136 14.696H20.9655C21.5002 14.696 21.9337 15.1295 21.9337 15.6642V17.3035C23.0329 15.6539 24.6664 14.3807 28.1444 14.3807C35.8462 14.3807 35.8021 21.5761 35.8021 25.5296V34.6235Z" fill="white"/>
+                      </svg>
+                            <svg id="facebook" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" fill="white"/>
+                          <path d="M35 0H5C2.2425 0 0 2.2425 0 5V35C0 37.7575 2.2425 40 5 40H35C37.7575 40 40 37.7575 40 35V5C40 2.2425 37.7575 0 35 0Z" fill="white"/>
+                          <path d="M33.75 20H27.5V15C27.5 13.62 28.62 13.75 30 13.75H32.5V7.5H27.5C23.3575 7.5 20 10.8575 20 15V20H15V26.25H20V40H27.5V26.25H31.25L33.75 20Z" fill="#EF5730"/>
+                          <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="white"/>
+                      </svg>
+                            <svg id="insta" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <path d="M2.50001 2.72168C-0.643327 5.98668 6.57141e-06 9.45501 6.57141e-06 19.9917C6.57141e-06 28.7417 -1.52666 37.5133 6.46334 39.5783C8.95834 40.22 31.065 40.22 33.5567 39.575C36.8833 38.7167 39.59 36.0183 39.96 31.3133C40.0117 30.6567 40.0117 9.33834 39.9583 8.66834C39.565 3.65668 36.48 0.768345 32.415 0.183345C31.4833 0.0483445 31.2967 0.00834453 26.5167 1.11982e-05C9.56167 0.00834453 5.84501 -0.746656 2.50001 2.72168Z" fill="white"/>
+                          <path d="M19.9967 5.23165C13.945 5.23165 8.19835 4.69331 6.00335 10.3266C5.09668 12.6533 5.22835 15.675 5.22835 20.0016C5.22835 23.7983 5.10668 27.3666 6.00335 29.675C8.19335 35.3116 13.9867 34.7716 19.9933 34.7716C25.7883 34.7716 31.7633 35.375 33.985 29.675C34.8933 27.325 34.76 24.3483 34.76 20.0016C34.76 14.2316 35.0783 10.5066 32.28 7.70998C29.4467 4.87665 25.615 5.23165 19.99 5.23165H19.9967ZM18.6733 7.89331C31.2967 7.87331 32.9033 6.46998 32.0167 25.965C31.7017 32.86 26.4517 32.1033 19.9983 32.1033C8.23168 32.1033 7.89335 31.7666 7.89335 19.995C7.89335 8.08665 8.82668 7.89998 18.6733 7.88998V7.89331ZM27.88 10.345C26.9017 10.345 26.1083 11.1383 26.1083 12.1166C26.1083 13.095 26.9017 13.8883 27.88 13.8883C28.8583 13.8883 29.6517 13.095 29.6517 12.1166C29.6517 11.1383 28.8583 10.345 27.88 10.345ZM19.9967 12.4166C15.8083 12.4166 12.4133 15.8133 12.4133 20.0016C12.4133 24.19 15.8083 27.585 19.9967 27.585C24.185 27.585 27.5783 24.19 27.5783 20.0016C27.5783 15.8133 24.185 12.4166 19.9967 12.4166ZM19.9967 15.0783C26.505 15.0783 26.5133 24.925 19.9967 24.925C13.49 24.925 13.48 15.0783 19.9967 15.0783Z" fill="#EF5730"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="40" height="40" fill="white"/>
+                          </clipPath>
+                          </defs>
+                      </svg>
+                            <svg id="twiter" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                          <path d="M40 7.5975C38.5125 8.25 36.9275 8.6825 35.275 8.8925C36.975 7.8775 38.2725 6.2825 38.8825 4.36C37.2975 5.305 35.5475 5.9725 33.6825 6.345C32.1775 4.7425 30.0325 3.75 27.6925 3.75C23.1525 3.75 19.4975 7.435 19.4975 11.9525C19.4975 12.6025 19.5525 13.2275 19.6875 13.8225C12.87 13.49 6.8375 10.2225 2.785 5.245C2.0775 6.4725 1.6625 7.8775 1.6625 9.39C1.6625 12.23 3.125 14.7475 5.305 16.205C3.9875 16.18 2.695 15.7975 1.6 15.195C1.6 15.22 1.6 15.2525 1.6 15.285C1.6 19.27 4.4425 22.58 8.17 23.3425C7.5025 23.525 6.775 23.6125 6.02 23.6125C5.495 23.6125 4.965 23.5825 4.4675 23.4725C5.53 26.72 8.545 29.1075 12.13 29.185C9.34 31.3675 5.7975 32.6825 1.9625 32.6825C1.29 32.6825 0.645 32.6525 0 32.57C3.6325 34.9125 7.9375 36.25 12.58 36.25C27.67 36.25 35.92 23.75 35.92 12.915C35.92 12.5525 35.9075 12.2025 35.89 11.855C37.5175 10.7 38.885 9.2575 40 7.5975Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0">
+                          <rect width="40" height="40" fill="white"/>
+                          </clipPath>
+                          </defs>
+                      </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Coordonnées + Logo-->
+                <div class="col-1 col-sm-2" itemscope itemtype="https://schema.org/Organization">
+                    <div class="coordonnees">
+                        <h3>Coordonnées</h3>
+                        <div class="tel">Tél : <span itemprop="telephone">04.76.76.76.76 - 06.06.06.06.06</span></div>
+                        <div class="email">Mail : <span itemprop="email"><a href="mailto:magic.mushrooms@le-shop-du-campus-numerique.fr" style="color: #24125F">magic.mushrooms@le-shop-du-campus-numerique.fr</a></span></div>
+                    </div>
+                </div>
+                <div class="col-1 col-sm-2">
+                    <div class="address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <h3>Adresse</h3>
+                        <div class="name"><span itemprop="name">Magic Mushrooms</span></div>
+                        <div class="street"><span itemprop="streetAddress">LDL Rue de la plane</span></div>
+                        <div class="city"><span itemprop="postalCode">F-38000 </span><span itemprop="addressLocality">GRENOBLE - France</span></div>
+                    </div>
+                </div>
+                <div class="col-1 col-sm-2">
+                    <img itemprop="logo" src="data/logo_champi.svg" class="card-img" alt="Pied-page">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script de cloture bootstrap !!!-IMPORTANT TOJOURS A LA FIN DU BODY-!!! -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
